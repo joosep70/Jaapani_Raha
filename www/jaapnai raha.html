@@ -1,0 +1,40 @@
+<html>
+
+<!-- see on kommentaar, kommentaarid kuidagi ei m�juta veebilehe t��d -->
+<!-- head block -->
+<head>
+	<title>Raha</title>
+	<script src="js/jquery.min.js"></script>
+</head>
+
+<!-- stiilide block -->
+<style>
+	
+</style>
+
+<!-- body block -->
+<body>
+	<h3>Raha Kalkulaator</h3>
+	<p>Hind: <input id="x" type="number"></p>
+<option id="y" class='select_continent' value='133.8'>Jaapani</option>
+    </p><button onclick="printAnswers()">arvutat</button>
+	<div id="answers" >
+		<p>euro=<text id="divideAnswers"></p>
+	</div>
+	
+</body>
+<script>
+    $("#answers").hide();
+    y =133.8
+	
+	function divide(){
+	    let x = $("#x").val();
+	    let y = $("#y").val();
+	    $("#divideAnswers").text(x*y);
+    }
+    function printAnswers() {
+        $("#answers").show()
+            divide();
+    }
+</script>
+</html>
